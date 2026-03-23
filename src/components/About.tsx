@@ -94,7 +94,7 @@ export default function About() {
               className={`flex-1 flex flex-col items-center justify-center text-center py-6 px-4 ${i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20" : ""
                 }`}
             >
-              <div className="w-full max-w-[220px] mx-auto flex flex-col items-center justify-center">
+              <div className="w-full flex flex-col items-center justify-center">
                 {stat.isImage ? (
                   <div className="h-[48px] lg:h-[60px] mb-4 w-full flex items-center justify-center">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -105,7 +105,10 @@ export default function About() {
                     {stat.value}
                   </div>
                 )}
-                <div className="font-label text-center w-full text-[10px] lg:text-xs uppercase tracking-[0.2em] pl-[0.2em] text-on-surface-variant">
+                <div 
+                  className="font-label text-center w-full text-[10px] lg:text-xs uppercase text-on-surface-variant"
+                  style={{ letterSpacing: '0.2em', textIndent: '0.2em' }}
+                >
                   {stat.label}
                 </div>
               </div>
