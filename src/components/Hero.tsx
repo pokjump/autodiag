@@ -4,67 +4,70 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black text-white selection:bg-white/30">
-      {/* Clean Dark Background */}
-      <div className="absolute inset-0 z-0 bg-[#07090e]">
-        <div className="absolute top-0 inset-x-0 h-[500px] w-full bg-gradient-to-b from-blue-900/20 to-transparent blur-3xl opacity-50" />
-        {/* Subtle grid pattern */}
+    <section className="relative min-h-[921px] flex items-center overflow-hidden bg-background">
+      {/* Background Image/Gradient */}
+      <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '60px 60px' }}
+          className="w-full h-full bg-cover bg-center opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" 
+          style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxqDxMl2udHRmox_GSBu_l0vlOWAc7KY5M1UKBz85HfkMVhraKj655cWlurK8HD_7jzg9zOarXmF3wPnr_S4VpsnjVn_CcO85G7hlTs2QBwH9_C3QveoOV2Sc1ldiUDbbo3Vw6sH1sUeSOyXWczGCeokUi7eQKc6d-fVuW4UvLakWfp8i8sn7NkM7Z3ArILz92a_0n0tGhdMJh4PSr3ycC-r5_jxfCjcQBCVMlh4Ci9a4rM4fTJvuVehkBEj4b6SQuGJsnhtzKUW7u')" }}
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center pt-24 pb-12 px-6">
-
-        {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto max-w-5xl text-center text-6xl font-bold tracking-tighter sm:text-7xl lg:text-[6rem] leading-[0.95]"
-        >
-          Twój samochód
-          <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-blue-300">
-            w najlepszych rękach.
-          </span>
-        </motion.h1>
-
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto mt-8 max-w-2xl text-center text-xl text-white/50 font-light leading-relaxed"
-        >
-          Od 20 lat diagnozujemy i rozwiązujemy najtrudniejsze problemy w elektronice pojazdowej oraz systemach zasilania gazem. Pełen profesjonalizm i doświadczenie.
-        </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 flex flex-col sm:flex-row items-center gap-5"
-        >
-          <a
-            href="#kontakt"
-            className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all hover:scale-105 active:scale-95"
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-32 pb-16">
+        <div className="max-w-3xl">
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6"
           >
-            <span className="relative z-10">Umów wizytę</span>
-            <svg className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-            <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-100 to-white opacity-0 transition-opacity group-hover:opacity-100" />
-          </a>
-          <a
-            href="#uslugi"
-            className="flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-medium text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/30"
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span className="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant font-medium">Auto-Diag Bielsko-Biała</span>
+          </motion.div>
+
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="font-headline text-5xl sm:text-6xl md:text-[5.5rem] font-bold tracking-tighter text-on-background mb-8 leading-[0.9] uppercase"
           >
-            Zobacz nasze usługi
-          </a>
-        </motion.div>
+            Twój samochód <br /> <span className="text-primary">w najlepszych rękach.</span>
+          </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 font-light leading-relaxed"
+          >
+            Od 20 lat diagnozujemy i rozwiązujemy najtrudniejsze problemy w elektronice pojazdowej oraz systemach zasilania gazem. Pełen profesjonalizm i doświadczenie.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-wrap gap-4"
+          >
+            <a
+              href="#kontakt"
+              className="px-8 py-4 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-sm rounded-md transition-all hover:bg-primary-container inline-flex items-center justify-center"
+            >
+              Umów wizytę
+            </a>
+            <a
+              href="#uslugi"
+              className="px-8 py-4 border border-outline-variant/30 text-on-background font-headline font-bold uppercase tracking-widest text-sm rounded-md hover:bg-surface-container-low transition-all inline-flex items-center justify-center"
+            >
+              Zobacz usługi
+            </a>
+          </motion.div>
+        </div>
 
         {/* Bento Stats */}
         <motion.div
@@ -74,22 +77,27 @@ export default function Hero() {
           className="mt-24 grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-3"
         >
           {[
-            { value: "Landi Renzo", label: "Autoryzowany partner", glow: "blue" },
-            { value: "4.7 / 5.0", label: "Ocena klientów Google", glow: "indigo" },
-            { value: "20+ lat", label: "Doświadczenia w branży", glow: "cyan" },
+            { value: "Landi Renzo", label: "Autoryzowany partner", glow: "primary" },
+            { value: "4.7 / 5.0", label: "Ocena Klientów Google", glow: "on-surface-variant" },
+            { value: "20+ lat", label: "Doświadczenia w branży", glow: "primary" },
           ].map((stat, i) => (
             <div
               key={stat.label}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-colors hover:bg-white/[0.05]"
+              className="relative overflow-hidden rounded-lg border border-outline-variant/15 bg-surface-container-low p-8 transition-colors hover:bg-surface-container-high"
             >
-              <div className={`absolute -right-10 -top-10 h-32 w-32 rounded-full bg-${stat.glow}-500/20 blur-2xl`} />
               <div className="relative z-10">
-                <div className="text-3xl font-bold tracking-tight text-white">{stat.value}</div>
-                <div className="mt-2 text-sm text-white/50">{stat.label}</div>
+                <div className="text-3xl font-headline font-bold tracking-tight text-on-background">{stat.value}</div>
+                <div className="mt-2 text-[10px] font-label uppercase tracking-widest text-on-surface-variant">{stat.label}</div>
               </div>
             </div>
           ))}
         </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-12 left-8 hidden lg:flex items-center gap-4 vertical-text z-10">
+        <span className="font-label text-[10px] uppercase tracking-[0.3em] opacity-50 text-on-background [writing-mode:vertical-lr]">Odkryj więcej</span>
+        <div className="w-[1px] h-12 bg-outline-variant/30"></div>
       </div>
     </section>
   );
