@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-4 font-body text-sm text-on-surface-variant mb-12">
               <li className="flex justify-between max-w-[200px]">
                 <span>Pon -Pt</span>
-                <span className="text-on-background font-medium">8:00 -17:00</span>
+                <span className="text-on-background font-medium">7:00 - 17:00</span>
               </li>
               <li className="flex justify-between max-w-[200px]">
                 <span>Sob -Nd</span>

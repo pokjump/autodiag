@@ -43,7 +43,7 @@ export default function Services() {
               <span className="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Autoryzowany Partner Landi Renzo</span>
               <h3 className="font-headline text-3xl font-bold text-on-background mb-4 uppercase tracking-tight">Instalacje Autogaz</h3>
               <p className="text-on-surface-variant max-w-md mb-6 leading-relaxed">
-                Profesjonalny montaż, serwis i precyzyjna diagnostyka najwyższej klasy instalacji LPG, idealnie dopasowanych do specyfikacji Twojego silnika.
+                Montaż, serwis i precyzyjna diagnostyka najwyższej klasy instalacji LPG, idealnie dopasowanych do specyfikacji Twojego silnika.
               </p>
             </div>
           </motion.div>
@@ -82,7 +82,7 @@ export default function Services() {
             </svg>
             <h3 className="font-headline text-2xl font-bold text-on-background mb-3 uppercase tracking-tight">Diagnostyka Komputerowa</h3>
             <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
-              Zaawansowane testery odczytujące błędy z każdego modułu pojazdu. Szybka lokalizacja usterek.
+              Testery odczytujące błędy z każdego modułu pojazdu. Szybka lokalizacja usterek.
             </p>
           </motion.div>
 

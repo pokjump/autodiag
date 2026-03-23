@@ -55,7 +55,7 @@ export default function About() {
           >
             {/* Trophy 1 */}
             <div className="rounded-lg bg-surface-container-high border border-outline-variant/10 p-8 flex items-center gap-6 transition-colors hover:bg-surface-container-highest">
-              <div className="h-16 w-16 rounded-full bg-surface-container-highest border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+              <div className="h-16 w-16 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-[2px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/om.png" alt="Orły Motoryzacji" className="w-full h-full object-contain" />
               </div>
@@ -67,7 +67,7 @@ export default function About() {
 
             {/* Trophy 2 */}
             <div className="rounded-lg bg-surface-container-high border border-outline-variant/10 p-8 flex items-center gap-6 transition-colors hover:bg-surface-container-highest">
-              <div className="h-16 w-16 rounded-full bg-surface-container-highest border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+              <div className="h-16 w-16 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-[2px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/zf.png" alt="Złota Firma" className="w-full h-full object-contain" />
               </div>
