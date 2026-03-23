@@ -7,8 +7,8 @@ export default function Hero() {
     <section className="relative min-h-[921px] flex items-center overflow-hidden bg-background">
       {/* Background Image/Gradient */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="w-full h-full bg-cover bg-center opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" 
+        <div
+          className="w-full h-full bg-cover bg-center opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
           style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxqDxMl2udHRmox_GSBu_l0vlOWAc7KY5M1UKBz85HfkMVhraKj655cWlurK8HD_7jzg9zOarXmF3wPnr_S4VpsnjVn_CcO85G7hlTs2QBwH9_C3QveoOV2Sc1ldiUDbbo3Vw6sH1sUeSOyXWczGCeokUi7eQKc6d-fVuW4UvLakWfp8i8sn7NkM7Z3ArILz92a_0n0tGhdMJh4PSr3ycC-r5_jxfCjcQBCVMlh4Ci9a4rM4fTJvuVehkBEj4b6SQuGJsnhtzKUW7u')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
@@ -17,15 +17,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-32 pb-16">
         <div className="max-w-3xl">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15 mb-6"
-          >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            <span className="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant font-medium">Auto-Diag Bielsko-Biała</span>
-          </motion.div>
+
 
           {/* Headline */}
           <motion.h1

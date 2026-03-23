@@ -19,7 +19,7 @@ export default function About() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-24">
-          
+
           {/* Left Column - Content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -27,18 +27,15 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/15 mb-6">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant font-medium">O nas</span>
-            </div>
-            
+
+
             <h2 className="mt-8 font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-background sm:text-5xl lg:text-6xl leading-[1.1] uppercase">
-              Pasja do motoryzacji<br/>
+              Pasja do motoryzacji<br />
               <span className="block text-primary mt-2">
                 od ponad 20 lat.
               </span>
             </h2>
-            
+
             <p className="mt-8 text-lg text-on-surface-variant leading-relaxed font-light">
               Firma <strong className="font-bold text-on-background">Auto-Diag</strong> z Bielska-Białej (ul. Harfowa 8) to synonim niezawodności i najwyższej jakości usług w branży autogazu oraz elektroniki pojazdowej. Jesteśmy dumnym partnerem marki <strong className="font-bold text-on-background tracking-wide">Landi Renzo</strong>, oferując bezkompromisowe systemy zasilania gazem.
             </p>
@@ -68,7 +65,7 @@ export default function About() {
                 <div className="font-label text-[10px] tracking-[0.2em] uppercase text-primary mt-2">Laureat Plebiscytu</div>
               </div>
             </div>
-            
+
             {/* Trophy 2 */}
             <div className="rounded-lg bg-surface-container-high border border-outline-variant/10 p-8 flex items-center gap-6 transition-colors hover:bg-surface-container-highest">
               <div className="h-16 w-16 rounded-full bg-on-surface-variant/20 flex items-center justify-center flex-shrink-0">
@@ -82,31 +79,30 @@ export default function About() {
               </div>
             </div>
           </motion.div>
-          
+
         </div>
 
         {/* Stitch Stats Grid */}
         <motion.div
-           initial={{ opacity: 0, y: 40 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true, margin: "-100px" }}
-           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-12 border-t border-outline-variant/20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-12 border-t border-outline-variant/20"
         >
           {stats.map((stat, i) => (
-             <div 
-               key={stat.label}
-               className={`text-center md:text-left ${
-                 i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20 pt-8 md:pt-0 md:pl-8 lg:pl-12" : ""
-               }`}
-             >
-                <div className={`font-headline text-5xl lg:text-6xl font-bold mb-3 ${i === 0 ? "text-primary" : "text-on-background"}`}>
-                  {stat.value}
-                </div>
-                <div className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant">
-                  {stat.label}
-                </div>
-             </div>
+            <div
+              key={stat.label}
+              className={`text-center md:text-left ${i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20 pt-8 md:pt-0 md:pl-8 lg:pl-12" : ""
+                }`}
+            >
+              <div className={`font-headline text-5xl lg:text-6xl font-bold mb-3 ${i === 0 ? "text-primary" : "text-on-background"}`}>
+                {stat.value}
+              </div>
+              <div className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant">
+                {stat.label}
+              </div>
+            </div>
           ))}
         </motion.div>
       </div>

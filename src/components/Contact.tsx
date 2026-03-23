@@ -36,20 +36,20 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="kontakt" className="relative bg-surface py-28 lg:py-36">
+    <section id="kontakt" className="relative bg-surface pb-28 lg:pb-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true, margin: "-100px" }}
-           transition={{ duration: 0.8, ease: "easeOut" }}
-           className="bg-gradient-to-br from-primary/10 to-transparent p-8 md:p-16 rounded-xl border border-primary/20 relative overflow-hidden"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="bg-gradient-to-br from-primary/10 to-transparent p-8 md:p-16 rounded-xl border border-primary/20 relative overflow-hidden"
         >
           {/* Subtle glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 blur-[100px] z-0 pointer-events-none"></div>
-          
+
           <div className="relative z-10 grid gap-12 lg:grid-cols-2 items-center">
-            
+
             {/* Left Side: Contact Info */}
             <div>
               <span className="font-label text-xs uppercase tracking-[0.15em] text-primary font-medium mb-4 block">

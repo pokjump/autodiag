@@ -90,10 +90,7 @@ export default function Reviews() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/15 mb-6">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            <span className="font-label text-xs uppercase tracking-[0.15em] text-on-surface-variant font-medium">Opinie Klientów</span>
-          </div>
+
           <h2 className="mt-2 font-headline text-4xl font-bold tracking-tighter text-on-background sm:text-5xl lg:text-6xl uppercase">
             Zaufali nam na Śląsku
           </h2>
