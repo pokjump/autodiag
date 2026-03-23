@@ -30,7 +30,7 @@ const contactInfo = [
       </svg>
     ),
     title: "Godziny otwarcia",
-    lines: ["Pon – Pt: 8:00 – 17:00", "Sob – Nd: Zamknięte"],
+    lines: ["Pon -Pt: 8:00 -17:00", "Sob -Nd: Zamknięte"],
   },
 ];
 

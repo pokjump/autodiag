@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="w-full border-t border-outline-variant/15 bg-surface-container-lowest">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Brand Info */}
           <div className="md:col-span-1 lg:col-span-2">
             <div className="font-headline text-primary font-bold text-2xl mb-6 tracking-tighter uppercase">Auto-Diag</div>
@@ -31,11 +31,11 @@ export default function Footer() {
             <h4 className="font-headline font-bold text-on-background uppercase text-xs tracking-widest mb-8">Godziny otwarcia</h4>
             <ul className="space-y-4 font-body text-sm text-on-surface-variant mb-12">
               <li className="flex justify-between max-w-[200px]">
-                <span>Pon – Pt</span>
-                <span className="text-on-background font-medium">8:00 – 17:00</span>
+                <span>Pon -Pt</span>
+                <span className="text-on-background font-medium">8:00 -17:00</span>
               </li>
               <li className="flex justify-between max-w-[200px]">
-                <span>Sob – Nd</span>
+                <span>Sob -Nd</span>
                 <span className="text-on-background font-medium">Zamknięte</span>
               </li>
             </ul>

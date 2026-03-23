@@ -7,24 +7,21 @@ export default function Services() {
     <section id="uslugi" className="py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true, margin: "-100px" }}
-           transition={{ duration: 0.8, ease: "easeOut" }}
-           className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8"
         >
           <div className="max-w-2xl">
             <h2 className="font-headline text-4xl font-bold tracking-tight text-on-background mb-4 uppercase">
-              Technologia.<br/>
+              Technologia.<br />
               <span className="text-on-surface-variant">Precyzja. Doświadczenie.</span>
             </h2>
             <div className="h-1 w-20 bg-primary mb-6"></div>
             <p className="text-on-surface-variant text-lg">
               Od zaawansowanych systemów autogaz Landi Renzo po skomplikowaną naprawę elektroniki. Zapewniamy kompleksową opiekę nad Twoim samochodem na najwyższym poziomie.
             </p>
-          </div>
-          <div className="hidden md:block">
-            <span className="font-headline text-8xl font-extrabold text-surface-container-high select-none opacity-50">04</span>
           </div>
         </motion.div>
 
