@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "20+", label: "Lat doświadczenia" },
-  { value: "5000+", label: "Zadowolonych klientów" },
-  { value: "Landi Renzo", label: "Autoryzowany Serwis" },
+  { value: "2000+", label: "Zadowolonych klientów" },
+  { isImage: true, src: "/lrlogo.png", label: "Autoryzowany Serwis" },
   { value: "100%", label: "Profesjonalizmu" },
 ];
 
@@ -37,7 +37,7 @@ export default function About() {
             </h2>
 
             <p className="mt-8 text-lg text-on-surface-variant leading-relaxed font-light">
-              Firma <strong className="font-bold text-on-background">Auto-Diag</strong> z Bielska-Białej (ul. Harfowa 8) to synonim niezawodności i najwyższej jakości usług w branży autogazu oraz elektroniki pojazdowej. Jesteśmy dumnym partnerem marki <strong className="font-bold text-on-background tracking-wide">Landi Renzo</strong>, oferując bezkompromisowe systemy zasilania gazem.
+              Firma <strong className="font-bold text-on-background">Auto-Diag</strong> z Bielska-Białej to synonim niezawodności i najwyższej jakości usług w branży autogazu oraz elektroniki pojazdowej. Jesteśmy dumnym partnerem marki <strong className="font-bold text-on-background tracking-wide">Landi Renzo</strong>, oferując bezkompromisowe systemy zasilania gazem.
             </p>
             <p className="mt-4 text-lg text-on-surface-variant leading-relaxed font-light">
               Szczycimy się certyfikatem <strong className="font-bold text-on-background tracking-wide">Złota Firma</strong> oraz tytułem laureata plebiscytu <strong className="font-bold text-on-background tracking-wide">Orły Motoryzacji</strong>. Stanowi to potwierdzenie zaufania, jakim obdarzyły nas tysiące klientów, co odzwierciedlają nasze doskonałe opinie w Google. Twoje auto jest u nas zawsze w bezpiecznych rękach doświadczonych inżynierów.
@@ -88,18 +88,26 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-12 border-t border-outline-variant/20"
+          className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-8 pt-12 border-t border-outline-variant/20"
         >
           {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className={`text-center md:text-left ${i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20 pt-8 md:pt-0 md:pl-8 lg:pl-12" : ""
-                }`}
+              className={`flex-1 flex flex-col items-center justify-center text-center px-2 py-4 ${
+                i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20" : ""
+              }`}
             >
-              <div className={`font-headline text-5xl lg:text-6xl font-bold mb-3 ${i === 0 ? "text-primary" : "text-on-background"}`}>
-                {stat.value}
-              </div>
-              <div className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant">
+              {stat.isImage ? (
+                <div className="h-[48px] lg:h-[60px] mb-3 flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={stat.src} alt="Landi Renzo" className="max-h-full max-w-[140px] object-contain" />
+                </div>
+              ) : (
+                <div className={`font-headline text-5xl lg:text-5xl xl:text-6xl font-bold mb-3 ${i === 0 ? "text-primary" : "text-on-background"}`}>
+                  {stat.value}
+                </div>
+              )}
+              <div className="font-label text-[10px] lg:text-xs uppercase tracking-[0.2em] text-on-surface-variant max-w-[180px]">
                 {stat.label}
               </div>
             </div>
