@@ -55,10 +55,9 @@ export default function About() {
           >
             {/* Trophy 1 */}
             <div className="rounded-lg bg-surface-container-high border border-outline-variant/10 p-8 flex items-center gap-6 transition-colors hover:bg-surface-container-highest">
-              <div className="h-16 w-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-                </svg>
+              <div className="h-16 w-16 rounded-full bg-surface-container-highest border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/om.png" alt="Orły Motoryzacji" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-headline font-bold text-on-background text-xl uppercase tracking-tight">Orły Motoryzacji</div>
@@ -68,10 +67,9 @@ export default function About() {
 
             {/* Trophy 2 */}
             <div className="rounded-lg bg-surface-container-high border border-outline-variant/10 p-8 flex items-center gap-6 transition-colors hover:bg-surface-container-highest">
-              <div className="h-16 w-16 rounded-full bg-on-surface-variant/20 flex items-center justify-center flex-shrink-0">
-                <svg className="h-8 w-8 text-on-surface-variant" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+              <div className="h-16 w-16 rounded-full bg-surface-container-highest border border-outline-variant/20 flex items-center justify-center flex-shrink-0 overflow-hidden p-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/zf.png" alt="Złota Firma" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-headline font-bold text-on-background text-xl uppercase tracking-tight">Złota Firma</div>
@@ -107,7 +105,7 @@ export default function About() {
                   {stat.value}
                 </div>
               )}
-              <div className="font-label text-[10px] lg:text-xs uppercase tracking-[0.2em] text-on-surface-variant max-w-[180px]">
+              <div className="font-label text-[10px] lg:text-xs uppercase tracking-[0.2em] pl-[0.2em] text-on-surface-variant max-w-[180px]">
                 {stat.label}
               </div>
             </div>

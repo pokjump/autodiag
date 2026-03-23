@@ -69,7 +69,7 @@ export default function Hero() {
           className="mt-24 grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-3"
         >
           {[
-            { value: "Landi Renzo", label: "Autoryzowany partner", glow: "primary" },
+            { value: "Landi Renzo", isImage: true, src: "/lrlogo.png", label: "Autoryzowany partner", glow: "primary" },
             { value: "4.7 / 5.0", label: "Ocena Klientów Google", glow: "on-surface-variant" },
             { value: "20+ lat", label: "Doświadczenia w branży", glow: "primary" },
           ].map((stat, i) => (
@@ -77,8 +77,15 @@ export default function Hero() {
               key={stat.label}
               className="relative overflow-hidden rounded-lg border border-outline-variant/15 bg-surface-container-low p-8 transition-colors hover:bg-surface-container-high"
             >
-              <div className="relative z-10">
-                <div className="text-3xl font-headline font-bold tracking-tight text-on-background">{stat.value}</div>
+              <div className="relative z-10 h-full flex flex-col justify-center">
+                {stat.isImage ? (
+                  <div className="h-[36px] mb-2 flex items-center justify-start">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={stat.src} alt={stat.value} className="max-h-full max-w-[140px] object-contain" />
+                  </div>
+                ) : (
+                  <div className="text-3xl font-headline font-bold tracking-tight text-on-background">{stat.value}</div>
+                )}
                 <div className="mt-2 text-[10px] font-label uppercase tracking-widest text-on-surface-variant">{stat.label}</div>
               </div>
             </div>
