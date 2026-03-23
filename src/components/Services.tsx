@@ -20,7 +20,7 @@ export default function Services() {
             </h2>
             <div className="h-1 w-20 bg-primary mb-6"></div>
             <p className="text-on-surface-variant text-lg">
-              Od zaawansowanych systemów autogaz Landi Renzo po skomplikowaną naprawę elektroniki. Zapewniamy kompleksową opiekę nad Twoim samochodem na najwyższym poziomie.
+              Od zaawansowanych systemów LPG po skomplikowaną naprawę elektroniki. Zapewniamy kompleksową opiekę nad Twoim samochodem na najwyższym poziomie.
             </p>
           </div>
         </motion.div>
@@ -41,7 +41,7 @@ export default function Services() {
             </div>
             <div className="relative z-10">
               <span className="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Autoryzowany Partner Landi Renzo</span>
-              <h3 className="font-headline text-3xl font-bold text-on-background mb-4 uppercase tracking-tight">Instalacje Autogaz</h3>
+              <h3 className="font-headline text-3xl font-bold text-on-background mb-4 uppercase tracking-tight">Instalacje LPG</h3>
               <p className="text-on-surface-variant max-w-md mb-6 leading-relaxed">
                 Montaż, serwis i precyzyjna diagnostyka najwyższej klasy instalacji LPG, idealnie dopasowanych do specyfikacji Twojego silnika.
               </p>

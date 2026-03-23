@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "20+", label: "Lat doświadczenia" },
-  { value: "2000+", label: "Zadowolonych klientów" },
+  { value: "TYSIĄCE", label: "Zadowolonych klientów" },
   { isImage: true, src: "/lrlogo.png", label: "Autoryzowany Serwis" },
   { value: "100%", label: "Profesjonalizmu" },
 ];
@@ -91,22 +91,23 @@ export default function About() {
           {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className={`flex-1 flex flex-col items-center justify-center text-center px-2 py-4 ${
-                i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20" : ""
-              }`}
+              className={`flex-1 flex flex-col items-center justify-center text-center py-6 px-4 ${i > 0 ? "border-t md:border-t-0 md:border-l border-outline-variant/20" : ""
+                }`}
             >
-              {stat.isImage ? (
-                <div className="h-[48px] lg:h-[60px] mb-3 flex items-center justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={stat.src} alt="Landi Renzo" className="max-h-full max-w-[140px] object-contain" />
+              <div className="w-full max-w-[220px] mx-auto flex flex-col items-center justify-center">
+                {stat.isImage ? (
+                  <div className="h-[48px] lg:h-[60px] mb-4 w-full flex items-center justify-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={stat.src} alt={stat.label} className="max-h-full max-w-[140px] w-full object-contain mx-auto" />
+                  </div>
+                ) : (
+                  <div className={`font-headline text-5xl lg:text-5xl xl:text-6xl font-bold mb-4 w-full text-center ${i === 0 ? "text-primary" : "text-on-background"}`}>
+                    {stat.value}
+                  </div>
+                )}
+                <div className="font-label text-center w-full text-[10px] lg:text-xs uppercase tracking-[0.2em] pl-[0.2em] text-on-surface-variant">
+                  {stat.label}
                 </div>
-              ) : (
-                <div className={`font-headline text-5xl lg:text-5xl xl:text-6xl font-bold mb-3 ${i === 0 ? "text-primary" : "text-on-background"}`}>
-                  {stat.value}
-                </div>
-              )}
-              <div className="font-label text-[10px] lg:text-xs uppercase tracking-[0.2em] pl-[0.2em] text-on-surface-variant max-w-[180px]">
-                {stat.label}
               </div>
             </div>
           ))}

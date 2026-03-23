@@ -39,12 +39,6 @@ export default function Footer() {
                 <span className="text-on-background font-medium">Zamknięte</span>
               </li>
             </ul>
-
-            <h4 className="font-headline font-bold text-on-background uppercase text-xs tracking-widest mb-8">Szybkie linki</h4>
-            <ul className="space-y-4 font-body text-sm text-on-surface-variant">
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">Przegląd usług</a></li>
-              <li><a href="#opinie" className="hover:text-primary transition-colors">Google Opinie</a></li>
-            </ul>
           </div>
         </div>
 
