@@ -97,13 +97,30 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="tel:+48334862716"
-                onClick={() => setMobileOpen(false)}
-                className="mt-4 rounded-md bg-primary px-4 py-3.5 text-center text-lg font-headline font-bold uppercase tracking-wide text-on-primary hover:brightness-110 transition-all"
-              >
-                Zadzwoń teraz
-              </a>
+              <div className="mt-4 space-y-2">
+                <p className="px-4 text-xs font-headline font-bold uppercase tracking-widest text-[#4EDE63]">Zadzwoń do nas</p>
+                <a
+                  href="tel:+48334862716"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-3 rounded-md bg-primary/10 border border-primary/20 px-4 py-3 text-base font-headline font-bold tracking-wide text-[#E2E2EA] hover:bg-primary/20 transition-all"
+                >
+                  <span className="text-[#4EDE63]">📞</span> +48 (33) 486 27 16
+                </a>
+                <a
+                  href="tel:+48602597144"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-3 rounded-md bg-primary/10 border border-primary/20 px-4 py-3 text-base font-headline font-bold tracking-wide text-[#E2E2EA] hover:bg-primary/20 transition-all"
+                >
+                  <span className="text-[#4EDE63]">📞</span> +48 602 597 144
+                </a>
+                <a
+                  href="tel:+48666228340"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-3 rounded-md bg-primary/10 border border-primary/20 px-4 py-3 text-base font-headline font-bold tracking-wide text-[#E2E2EA] hover:bg-primary/20 transition-all"
+                >
+                  <span className="text-[#4EDE63]">📞</span> +48 666 228 340
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
