@@ -37,10 +37,10 @@ export default function About() {
             </h2>
 
             <p className="mt-8 text-lg text-on-surface-variant leading-relaxed font-light">
-              Firma <strong className="font-bold text-on-background">Auto-Diag</strong> z Bielska-Białej to synonim niezawodności i najwyższej jakości usług w branży autogazu oraz elektroniki pojazdowej. Jesteśmy dumnym partnerem marki <strong className="font-bold text-on-background tracking-wide">Landi Renzo</strong>, oferując bezkompromisowe systemy zasilania gazem.
+              Firma <strong className="font-bold text-on-background">Auto-Diag</strong> z Bielska-Białej działa od 2008 roku. Specjalizujemy się w montażu i serwisie instalacji LPG, montażu haków holowniczych, alarmów, zabezpieczeń oraz naprawie elektroniki pokładowej.
             </p>
             <p className="mt-4 text-lg text-on-surface-variant leading-relaxed font-light">
-              Szczycimy się certyfikatem <strong className="font-bold text-on-background tracking-wide">Złota Firma</strong> oraz tytułem laureata plebiscytu <strong className="font-bold text-on-background tracking-wide">Orły Motoryzacji</strong>. Stanowi to potwierdzenie zaufania, jakim obdarzyły nas tysiące klientów, co odzwierciedlają nasze doskonałe opinie w Google. Twoje auto jest u nas zawsze w bezpiecznych rękach doświadczonych inżynierów.
+              Szczycimy się certyfikatem <strong className="font-bold text-on-background tracking-wide">Złota Firma</strong> oraz tytułem laureata plebiscytu <strong className="font-bold text-on-background tracking-wide">Orły Motoryzacji</strong>. Stanowi to potwierdzenie zaufania, jakim obdarzyły nas tysiące klientów, co odzwierciedlają nasze doskonałe opinie w Google. Twoje auto jest u nas zawsze w bezpiecznych rękach doświadczonych specjalistów.
             </p>
 
           </motion.div>
@@ -105,7 +105,7 @@ export default function About() {
                     {stat.value}
                   </div>
                 )}
-                <div 
+                <div
                   className="font-label text-center w-full text-[10px] lg:text-xs uppercase text-on-surface-variant"
                   style={{ letterSpacing: '0.2em', textIndent: '0.2em' }}
                 >

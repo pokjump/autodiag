@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 font-light leading-relaxed"
           >
-            Od 20 lat diagnozujemy i rozwiązujemy najtrudniejsze problemy w elektronice pojazdowej oraz systemach zasilania gazem. Pełen profesjonalizm i doświadczenie.
+            Autoryzowany warsztat Landi Renzo Gas Specialist. Montaż i serwis instalacji LPG, haków holowniczych, alarmów, zabezpieczeń oraz naprawa elektroniki pokładowej.
           </motion.p>
 
           {/* CTAs */}

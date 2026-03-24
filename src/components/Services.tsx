@@ -40,7 +40,7 @@ export default function Services() {
               </svg>
             </div>
             <div className="relative z-10">
-              <span className="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Autoryzowany Partner Landi Renzo</span>
+              <span className="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Landi Renzo Gas Specialist</span>
               <h3 className="font-headline text-3xl font-bold text-on-background mb-4 uppercase tracking-tight">Instalacje LPG</h3>
               <p className="text-on-surface-variant max-w-md mb-6 leading-relaxed">
                 Montaż, serwis i precyzyjna diagnostyka najwyższej klasy instalacji LPG, idealnie dopasowanych do specyfikacji Twojego silnika.
@@ -48,7 +48,7 @@ export default function Services() {
             </div>
           </motion.div>
 
-          {/* Chip-Tuning */}
+          {/* Haki Holownicze */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,15 +57,14 @@ export default function Services() {
             className="md:col-span-4 bg-surface-container-high rounded-lg p-8 border-l-2 border-primary transition-colors hover:bg-surface-container-highest flex flex-col"
           >
             <svg className="h-10 w-10 text-primary mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.747L15.09 4.272a2.25 2.25 0 00-1.838-.952H9.25A2.25 2.25 0 007 5.57v5.93m10.5 7.25V12m0 0H7m10.5 0l-1.5-6" />
             </svg>
-            <h3 className="font-headline text-2xl font-bold text-on-background mb-3 uppercase tracking-tight">Chip-Tuning</h3>
+            <h3 className="font-headline text-2xl font-bold text-on-background mb-3 uppercase tracking-tight">Haki Holownicze</h3>
             <p className="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
-              Odblokuj ukryty potencjał silnika. Bezpieczne zwiększenie mocy i optymalizacja spalania poprzez modyfikację oprogramowania ECU.
+              Profesjonalny montaż haków holowniczych do każdego modelu samochodu. Solidne mocowanie i fachowy montaż.
             </p>
             <div className="flex gap-2">
-              <span className="px-2 py-1 bg-surface-container-lowest border border-outline-variant/20 rounded text-[10px] font-label uppercase text-primary tracking-tighter">Moc</span>
-              <span className="px-2 py-1 bg-surface-container-lowest border border-outline-variant/20 rounded text-[10px] font-label uppercase text-primary tracking-tighter">Oszczędność</span>
+              <span className="px-2 py-1 bg-surface-container-lowest border border-outline-variant/20 rounded text-[10px] font-label uppercase text-primary tracking-tighter">Montaż</span>
             </div>
           </motion.div>
 
@@ -86,7 +85,7 @@ export default function Services() {
             </p>
           </motion.div>
 
-          {/* Elektronika & Bezpieczeństwo */}
+          {/* Elektronika, Alarmy & Zabezpieczenia */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,14 +100,15 @@ export default function Services() {
                 </svg>
               </div>
               <div className="flex-1">
-                <h3 className="font-headline text-2xl font-bold text-on-background mb-3 uppercase tracking-tight">Elektronika & Bezpieczeństwo</h3>
+                <h3 className="font-headline text-2xl font-bold text-on-background mb-3 uppercase tracking-tight">Elektronika, Alarmy & Zabezpieczenia</h3>
                 <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
-                  Naprawa sterowników AirBag, SRS, ABS, ESP, montaż zaawansowanych alarmów, immobiliserów oraz czujników parkowania.
+                  Naprawa elektroniki pokładowej, montaż alarmów samochodowych, immobiliserów oraz zabezpieczeń antykradzieżowych. Kompleksowa obsługa systemów elektronicznych pojazdu.
                 </p>
                 <div className="grid grid-cols-2 gap-y-2 text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
-                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Naprawa Modułów</div>
-                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Zabepieczenia Antykradzieżowe</div>
-                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Systemy Wspomagania</div>
+                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Naprawa Elektroniki</div>
+                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Alarmy Samochodowe</div>
+                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Zabezpieczenia Antykradzieżowe</div>
+                  <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span> Immobilisery</div>
                 </div>
               </div>
             </div>

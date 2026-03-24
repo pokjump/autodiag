@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-1 lg:col-span-2">
             <img src="/adlogonewnobg.png" alt="Auto-Diag Logo" className="h-12 w-auto mb-6" />
             <p className="text-on-surface-variant text-sm leading-relaxed max-w-sm mb-8 font-light">
-              Profesjonalny serwis samochodowy w Bielsku-Białej. Dumni z 20-letniego doświadczenia, autoryzacji Landi Renzo oraz pasji do zaawansowanej elektroniki i systemów diagnozujących.
+              Autoryzowany warsztat Landi Renzo Gas Specialist w Bielsku-Białej. Montaż i serwis instalacji LPG, haków holowniczych, alarmów, zabezpieczeń oraz naprawa elektroniki pokładowej.
             </p>
           </div>
 
@@ -22,6 +22,9 @@ export default function Footer() {
                 <a href="tel:+48334862716" className="hover:text-primary transition-colors block">+48 (33) 486 27 16</a>
                 <a href="tel:+48602597144" className="hover:text-primary transition-colors block mt-2">+48 602 597 144</a>
                 <a href="tel:+48666228340" className="hover:text-primary transition-colors block mt-2">+48 666 228 340</a>
+              </li>
+              <li className="pt-2">
+                <a href="mailto:biuro@autodiag.bielsko.pl" className="hover:text-primary transition-colors block">biuro@autodiag.bielsko.pl</a>
               </li>
             </ul>
           </div>
