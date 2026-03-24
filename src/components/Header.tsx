@@ -31,7 +31,7 @@ export default function Header() {
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 lg:px-8 h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <img src="/adlogo.png" alt="Auto-Diag" className="h-8 w-auto" />
+          <img src="/adlogonewnobg.png" alt="Auto-Diag" className="h-8 w-auto" />
         </a>
 
         {/* Desktop nav */}
