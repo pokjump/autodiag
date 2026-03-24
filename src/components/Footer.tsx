@@ -6,7 +6,7 @@ export default function Footer() {
 
           {/* Brand Info */}
           <div className="md:col-span-1 lg:col-span-2">
-            <div className="font-headline text-primary font-bold text-2xl mb-6 tracking-tighter uppercase">Auto-Diag</div>
+            <img src="/adlogo.png" alt="Auto-Diag Logo" className="h-12 w-auto mb-6" />
             <p className="text-on-surface-variant text-sm leading-relaxed max-w-sm mb-8 font-light">
               Profesjonalny serwis samochodowy w Bielsku-Białej. Dumni z 20-letniego doświadczenia, autoryzacji Landi Renzo oraz pasji do zaawansowanej elektroniki i systemów diagnozujących.
             </p>
